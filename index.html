@@ -19,15 +19,32 @@
     <div class="container">
         <div class="bg-wrapper">
             <div class="desc--wrapper">
-                <p class="description">“ I’ve been interested in coding for a
-                    while but never taken the jump, until now.
-                    I couldn’t recommend this course enough. I’m now in the job
-                    of my dreamssss and so
-                    excited about the future. ”</p>
-                <p class="author">Tanya Sinclair <span class="author--category">
-        UX Engineer</span></p>
+                <p id="post" class="description">“ If you want to lay the best foundation possible
+                    I’d recommend taking this course. The depth the instructors go into is incredible.
+                    I now feel so confident about starting up as a professional
+                    developer. ”</p>
+                <div class="author--flex">
+                    <p class="author" id="author--post">John Tarkpor </p>
+                    <div class="author--category" id="category">UX Engineer</div>
+                </div>
             </div>
-            <img src="images/image-john.jpg" class="person--img" alt="">
+            <div class="person">
+                <img src="images/image-john.jpg" id="img--person" class="person--img" alt="">
+                <div class="icons--wrapper">
+                    <a href="#" onclick="changeFirstLink()" class="icons-wrapper__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" color="#777">
+                            <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" onclick="changeSecondLink()" class="icons-wrapper__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                            <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -36,5 +53,7 @@
         Coded by <a href="#">Your Name Here</a>.
     </div>
 </div>
+
+<script src="app.js"></script>
 </body>
 </html>

@@ -5,6 +5,10 @@ body {
 $dark-blue: hsl(240, 38%, 20%);
 $grayish-Blue: hsl(240, 18%, 77%);
 
+:root {
+    --arrow-color: #777777;
+}
+
 
 @mixin flexItemsCenter($direction) {
     display: flex;
@@ -17,10 +21,6 @@ $grayish-Blue: hsl(240, 18%, 77%);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.side-wrapper {
-    @include flexItemsCenter(row);
 }
 
 .bg-wrapper {
@@ -46,16 +46,24 @@ $grayish-Blue: hsl(240, 18%, 77%);
     font-size: 26px;
     padding-top: 70px;
     color: #29273F;
+    font-weight: 300;
 }
 
 .author {
     color: $dark-blue;
     font-weight: 700;
+    display: block;
 }
 
 .author--category {
     color: #777777;
     font-weight: 500;
+    margin-left: 4px;
+}
+
+.author--flex {
+    display: flex;
+    align-items: center;
 }
 
 .person--img {
@@ -67,6 +75,29 @@ $grayish-Blue: hsl(240, 18%, 77%);
     margin-top: 16px;
     border-radius: 6px;
     box-shadow: 1px 1px 20px #4c4c4c99;
+}
+
+.person {
+    position: relative;
+}
+
+.icons--wrapper {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    border-radius: 17px;
+}
+
+.icons-wrapper__link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icons-wrapper__link svg path{
+    stroke: var(--arrow-color);
 }
 
 
